@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ipython = "*"
+langgraph = "*"
+langchain-openai = "*"
+langchain-groq = "*"
+langchain-google-genai = "*"
+langchain-core = "*"
+langchain = "*"
+uvicorn = "*"
+fastapi = "*"
+mysql-connector-python = "*"
+dotenv = "*"
+numpy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
