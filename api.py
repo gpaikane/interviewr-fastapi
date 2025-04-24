@@ -44,6 +44,9 @@ async def post_graph_invoke(input_data: InputData):
                                           "num_questions": num_questions
                                           })
 
+    if(result['policy_violation']!='NA'):
+        return {"policy_violation": result['policy_violation']}
+
     selected_data = {"policy_violation": result['policy_violation'],
                      "new_question":result["new_question"],
                      "evaluation":result["evaluation"],
