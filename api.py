@@ -47,8 +47,8 @@ async def post_graph_invoke(input_data: InputData):
 
 
 @app.get("/get_evaluation/")
-async def post_graph_invoke(uuid: str):
+async def get_evaluation(uuid: str):
     db = "interviews"
     query= f"select question, user_response, evaluation, marks from interview_state for user_id = {uuid}"
-    result =read_sql_data(query, db)
+    result  =read_sql_data(query, db)
     return result
