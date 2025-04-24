@@ -69,6 +69,6 @@ async def get_evaluation(user_id: str):
     :return:  evaluated answers and marks for given user_id(uuid).
     """
     db = "interviews"
-    query= f"select question, user_response, evaluation, marks from interview_state where user_id = '{uuid}'"
+    query= f"select question, user_response, evaluation, marks from interview_state where user_id = '{user_id}'"
     result  =read_sql_data(query, db)
     return result
