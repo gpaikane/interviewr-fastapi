@@ -1,6 +1,7 @@
 from pydantic import BaseModel
-from fastapi import FastAPI, Query
+from fastapi import FastAPI
 from graph.generate_graph import InterviewGraph
+from dbconnector.connetsql import read_sql_data
 
 app = FastAPI()
 
@@ -42,4 +43,12 @@ async def post_graph_invoke(input_data: InputData):
                                           'max_questions': max_questions,
                                           "num_questions": num_questions
                                           })
+    return result
+
+
+@app.get("/get_evaluation/")
+async def post_graph_invoke(uuid: str):
+    db = "interviews"
+    query= f"select question, user_response, evaluation, marks from interview_state for user_id = {uuid}"
+    result =read_sql_data(query, db)
     return result
