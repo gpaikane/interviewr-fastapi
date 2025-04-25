@@ -25,3 +25,7 @@ Streamlit has been used for frontend here is the repo url: https://github.com/gp
 * `followup_generator`: Generates followup question according to the last question and difficulty level
 * `question_generator`: Generates new question according to skill and difficulty level
 
+**POST: get_evaluation**
+* queries sql database on  **AWS RDS**: `select question from interview_state where user_id = '{state['user_id']}'`
+
+
