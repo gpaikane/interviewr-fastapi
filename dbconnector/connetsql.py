@@ -30,7 +30,7 @@ def insert_sql_data(values_dict, table_name, db):
         print("Error occurred while adding data to database:", e)
 
     finally:
-        if cursor:
+        if cursor is not None:
             cursor.close()
         if conn and conn.is_connected():
             conn.close()
