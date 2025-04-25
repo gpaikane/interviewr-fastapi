@@ -20,8 +20,8 @@ Streamlit has been used for frontend here is the repo url: https://github.com/gp
 * `start`: User id, user name, question, answer of the question, subjects, difficulty level is provided as input
 * `policy_checker`: Checks text, checks for blank input , derogatory workds, checks if user directs the model to asks specific questions.
 * `evaluator`: Evaluates the answer provided as input, provides marks out of 5 
-* `db_state_sync`: stores user_id, user_name, question, answer, feedback and marks in db, also reads all past questions from db so that they won't get repeated.
-* `followup_decider`: decides to ask a followup question to the already answered question
-* `followup_generator`: generates followup question
-* `question_generator`: 
+* `db_state_sync`: Stores user_id, user_name, question, answer, feedback and marks in db, also reads all past questions from db so that they won't get repeated.
+* `followup_decider`: Decides to ask a followup question to the already answered question
+* `followup_generator`: Generates followup question according to the last question and difficulty level
+* `question_generator`: Generates new question according to skill and difficulty level
 
