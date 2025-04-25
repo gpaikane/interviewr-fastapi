@@ -8,7 +8,7 @@ There are two end points created
 * GET: get_evaluation
     * The enpoint calls myslq db on **AWS RDS** and fetches questions, evaluations and marks for a given user_id
   
-Streamlit has been used for frontend here is the repo url: https://github.com/gpaikane/interviewer-streamlit-frontend
+Streamlit has been used for frontend here is the repo url: https://github.com/gpaikane/interviewer-streamlit-frontend and the hosted app url is http://51.20.190.247/ 
 
 **Details**:
 * **POST: post_graph_invoke**
