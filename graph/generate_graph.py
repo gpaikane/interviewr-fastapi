@@ -13,9 +13,9 @@ import numpy as np
 import os
 
 
-llm_gpt = ChatOpenAI(model="gpt-4o-mini", api_key=os.environ.get("GEMINI_API_KEY"))
+llm_gpt = ChatOpenAI(model="gpt-4o-mini", api_key=os.environ.get("OPEN_AI_API_KEY"))
 llm_llama = ChatGroq(model='llama-3.3-70b-versatile',  api_key=os.environ.get("GROQ_API_KEY"))
-llm_gemini = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=os.environ.get("OPEN_AI_API_KEY"))
+llm_gemini = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=os.environ.get("GEMINI_API_KEY"))
 
 
 # Prompts
