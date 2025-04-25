@@ -13,6 +13,7 @@ def connect_to_db(db):
     return conn
 
 def insert_sql_data(values_dict, table_name, db):
+    cursor = None
     try:
         conn =  connect_to_db(db)
         cursor = conn.cursor()
