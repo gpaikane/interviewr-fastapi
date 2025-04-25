@@ -6,7 +6,7 @@ There are two end points created
 * POST: post_graph_invoke
     * The end point invokes a langgraph based graph which is responsible to evaluate interviewee response, store the questions, answers, evaluation in db and generate new question for the interviewee.
 * GET: get_evaluation
-    * The enpoint calls DB hosted on **AWS RDS** and fetches questions, evaluations and marks for a  given user_id
+    * The enpoint calls myslq db on **AWS RDS** and fetches questions, evaluations and marks for a  given user_id
  
 
 The Frontend repo for 
