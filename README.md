@@ -6,14 +6,13 @@ There are two end points created
 * POST: post_graph_invoke
     * The end point invokes a langgraph based graph which is responsible to evaluate interviewee response, store the questions, answers, evaluation in db and generate new question for the interviewee.
 * GET: get_evaluation
-    * The enpoint calls myslq db on **AWS RDS** and fetches questions, evaluations and marks for a  given user_id
- 
+    * The enpoint calls myslq db on **AWS RDS** and fetches questions, evaluations and marks for a given user_id
+  
+Streamlit has been used for frontend here is the repo url: https://github.com/gpaikane/interviewer-streamlit-frontend
 
-The Frontend repo for 
-
-
-
-
-
-
+**Details**:
+* **POST: post_graph_invoke**
+   * Here is the graph created in langgraph for the end point
 <img width="404" alt="Screenshot 2025-04-25 at 1 45 45 PM" src="https://github.com/user-attachments/assets/bde0ca2b-9a57-4b70-b94c-8b9a78894bec" />
+* Below are the graph componenets:
+   *
