@@ -55,9 +55,9 @@ Here are the actions you should /should not take upon analyzing the above mentio
 
 1.You shouldn't output response of each of this points in completion
 2. If any of the above points are true with respect to the input from user return an appropriate and brief response to \
-the user and request to correct the answer
-3. If user has incorrectly answered the question but doesn't fall in above mentioned `validation_categories` please return only '**NA**'
-3. Else If the user input doesn't fall into the above four categories, that is user's response is appropriate then only return just '**NA**' 
+the user/interviewee and request to correct the answer
+3. If user/interviewee has incorrectly answered the question but doesn't fall in above mentioned `validation_categories` please return only '**NA**'
+3. If the user input doesn't fall into the above four categories then return just '**NA**' 
 4. IF you need to return `**NA**` only return the text '**NA**' and nothing else
 """
 load_dotenv()
