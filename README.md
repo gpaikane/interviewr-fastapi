@@ -1,5 +1,5 @@
 The code base is created to create Fast API end points to faciliate interviewer interviewee interactions.
-The fastapi app is hosted on **AWS EC2 instance** http://51.20.129.124/docs 
+The fastapi app is hosted on **AWS ECS** http://13.233.156.224/docs 
 
 There are two end points created
 
